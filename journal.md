@@ -2,8 +2,8 @@
 
 > **Cours :** 420-W40-SF - Développement d’applications Web (Cégep de Sainte-Foy)  
 > **Travail :** TP01 - Gestionnaire de produits  
-> **Étudiant(e) :** {{ Votre nom }}
-> **Période :** {{ AAAA-MM-JJ }} → {{ AAAA-MM-JJ }}
+> **Étudiant(e) :** {{ Pablo Morato Gomez }}
+> **Période :** {{ 2026-02-20 }} → {{ AAAA-MM-JJ }}
 
 ---
 
@@ -23,11 +23,11 @@ Pour **chaque séance**, écrire **8 à 10 lignes** (minimum) qui incluent :
 _Ex. Initialiser le projet et mettre en place la structure de base._
 
 **Travail réalisé (8–10 lignes min)**  
-- …
-- …
-- …
-- …
-- …
+- Création du répo
+- Création du projet 
+- Conception et création des composants en besoin
+- Ajout de scripts de produit
+- 
 - …
 - …
 - …

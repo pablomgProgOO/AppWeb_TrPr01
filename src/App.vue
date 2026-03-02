@@ -1,17 +1,20 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import  {type Jersey} from './Scripts/Item';
+import * as items from './Scripts/Item';
+import {ref} from 'vue';
+const jerseys = ref<Jersey[]>([...items.jerseyList]);
+import ListView from "./components/List-view.vue";
+import Form from "./components/Form.vue";
+import ItemView from "./components/Item-view.vue";
+
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <img src="../src/assets/Jersey_logo.JPG" alt="Logo">
+  <h1>Gestionnaire de maillots</h1>
+  <Form></Form>
+  <ListView :items="jerseys" />
+  <ItemView></ItemView>
 </template>
 
 <style scoped>
