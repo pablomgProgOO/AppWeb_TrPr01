@@ -18,7 +18,7 @@ Pour **chaque séance**, écrire **8 à 10 lignes** (minimum) qui incluent :
 
 ---
 
-## Séance 1 — _AAAA-MM-JJ_ (Durée : _XhYm_)
+## Séance 1 — _2026-02-20_ (Durée : 2h)
 **Objectif de la séance :**  
 _Ex. Initialiser le projet et mettre en place la structure de base._
 
@@ -27,65 +27,65 @@ _Ex. Initialiser le projet et mettre en place la structure de base._
 - Création du projet 
 - Conception et création des composants en besoin
 - Ajout de scripts de produit
-- 
-- …
-- …
-- …
+- Creation d'une demo de produits
+- Debut du html du composant List
+- Partage du repo au prof
+- Organisation des prochaines sceances
 - …
 
 **Difficultés / bugs**  
-- _Ex. Erreur TypeScript sur…_  
-- _Ex. Problème de build / import / router / bootstrap…_
+- Probleme de SSH key
 
 **Solutions / pistes testées**  
-- _Ex. J’ai consulté… puis j’ai modifié…_  
-- _Ex. J’ai ajouté un type, corrigé un composant, refactoré…_
+- Creation d'une nouvelle Key et enregistrement du Key sur Github  
+
 
 ---
 
-## Séance 2 — _AAAA-MM-JJ_ (Durée : _XhYm_)
+## Séance 2 — _2026-02-24_ (Durée : 2h)
 **Objectif de la séance :**  
-…
+Avancer sur le Html des composants
 
 **Travail réalisé (8–10 lignes min)**  
-- …
-- …
-- …
-- …
-- …
-- …
-- …
-- …
-- …
+- Début du html de Item 
+- Début du html de List
+- Début du html de App
+- Modification du css
+- Liason entre List - Item avec props
+- Liason avec App - List avec props
+- Début du html de Form
+- Début du html de Item-view
+- Debut du html de List-view
 
 **Difficultés / bugs**  
-- …
+- Liason props me donnait des érreurs
 
 **Solutions / pistes testées**  
-- …
+- J'avais oublier d'ajouter setup lang = ts dans les scripts
 
 ---
 
-## Séance 3 — _AAAA-MM-JJ_ (Durée : _XhYm_)
-**Objectif de la séance :**  
+## Séance 3 — _2026-02-27_ (Durée : 2h30m)
+**Objectif de la séance : Terminer le Html et lier les composants**  
 …
 
 **Travail réalisé (8–10 lignes min)**  
-- …
-- …
-- …
-- …
-- …
-- …
-- …
-- …
-- …
+- Completion du html de Item
+- Completion du html de Form
+- Completion du html de App
+- Completion du html de List
+- Completion du html de List-view
+- Completion du html de Item-view
+- Liaison de List-view - List avec props
+- Ajout du filtre 
+- Ajout de la liste démo pour tester
 
 **Difficultés / bugs**  
-- …
+- Ajout de la liste démo - erreurs de typage
+
 
 **Solutions / pistes testées**  
-- …
+- J'ai utilisé un opérateur de copie (...) 
 
 ---
 

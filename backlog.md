@@ -2,8 +2,8 @@
 
 > **Cours :** 420-W40-SF - Développement d’applications Web (Cégep de Sainte-Foy)  
 > **Travail :** TP01 - Gestionnaire de produits  
-> **Étudiant(e) :** {{ Votre nom }}
-> **Dernière mise à jour :** {{ AAAA-MM-JJ }}
+> **Étudiant(e) :** {{ VPablo Morato Gomez }}
+> **Dernière mise à jour :** {{ 2026-02-27 }}
 
 
 ---
@@ -32,3 +32,13 @@
 | --: | :------: | :----: | ------------- | :-----------: | ------------------------------------------- | ----------------- |
 |  A1 |   MUST   |   ⬜    |               |               |                                             |                   |
 |     |          |        |               |               |                                             |                   |
+| A1 |  | MUST | ✅ Fait  | Completer le Html du composant Form | 1-4 | Un formulaire html avec des inputs pour chaque valeur du produit | Aucun obstacle |
+| A2 |  | MUST | ✅ Fait  | Completer le Html du composant App | 1-9 | Le composant contient tous les composants | Aucun obstacle |
+| A3 |  | MUST | ✅ Fait  | Completer le Html du composant Item | 2-9 | Le composant montre le nom/prix du produit et contient des boutons en rapport des events | Aucun obstacle |
+| A4 |  | MUST | ✅ Fait  | Completer le Html du composant List-view | 1-9 | Le composant contient un input de filtre et le composant List | Aucun obstacle |
+| A5 |  | MUST | ✅ Fait  | Completer le Html du composant List | 1-9 | Le composant contient une liste de composants Item | Aucun obstacle |
+| A6 |  | MUST | ✅ Fait  | Completer le Html du composant Item-view | 1-9 | Le composant montre toutes les valeurs dans une interface Jersey | Aucun obstacle |
+| A7 |  | MUST | ✅ Fait  | Lier les composants List-view - List - Item avec App| 1-9 | L'origine des valeurs dans affiches dans les composants viens de les valeurs dans le composant App | Setup lang ="ts" est important |
+| A8 |  | MUST | ✅ Fait  | Lier les composants List-view - List| 6 | On peut filtrer la liste selon ce qu'on met dans le input | Aucune note |
+
+
