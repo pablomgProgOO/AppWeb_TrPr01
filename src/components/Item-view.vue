@@ -1,15 +1,23 @@
 <script setup lang="ts">
-import {jersey2} from "../Scripts/Item.ts";
+import { type Jersey } from "../Scripts/Item";
+import { ref} from "vue";
+const emit = defineEmits(["clear"]);
+const props= defineProps<{ product: Jersey}>();
+const localItem = ref(props.product);
+const clear=()=>
+{
+    emit("clear");
+}
 </script>
 
 <template>
     <h3>Demo</h3>
 <div class="card">
-    <h2>Nom: {{ jersey2.Name }}</h2>
-    <h3>Description: {{ jersey2.Description }}</h3>
-    <h4>Stock : {{ jersey2.Stock }}</h4>
-    <h4>Prix : {{ jersey2.price }}</h4>
-    <button>Retour</button>
+    <h2>Nom: {{ localItem.Name }}</h2>
+    <h3>Description: {{ localItem.Description }}</h3>
+    <h4>Stock : {{ localItem.Stock }}</h4>
+    <h4>Prix : {{ localItem.price }}</h4>
+    <button @click="clear">Retour</button>
   </div>
 </template>
 

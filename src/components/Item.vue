@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Jersey } from "../Scripts/Item";
 defineProps<{ item: Jersey}>();
+const emit = defineEmits(["select", "edit", "duplicate", "delete"]);
 </script>
 
 <template>
