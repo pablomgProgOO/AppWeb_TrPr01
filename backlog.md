@@ -40,5 +40,11 @@
 | A6 |  | MUST | ✅ Fait  | Completer le Html du composant Item-view | 1-9 | Le composant montre toutes les valeurs dans une interface Jersey | Aucun obstacle |
 | A7 |  | MUST | ✅ Fait  | Lier les composants List-view - List - Item avec App| 1-9 | L'origine des valeurs dans affiches dans les composants viens de les valeurs dans le composant App | Setup lang ="ts" est important |
 | A8 |  | MUST | ✅ Fait  | Lier les composants List-view - List| 6 | On peut filtrer la liste selon ce qu'on met dans le input | Aucune note |
+| B1 |  | MUST | ⬜ À faire  | Completer les évennements du composant Form | 1-4  | Je peux utiliser les boutons de cancel et submit selon la démande de form | Aucun obstacle |
+| B2 |  | MUST | ⬜ À faire  | Completer le évennements du composant App | 1-9 | Le composant modifie la liste d'origine selon les appels qu'il reçoit et reçoit les appels d'autres composants| Aucun obstacle |
+| B3 |  | MUST | ⬜ À faire  | Completer le évennements du composant Item | 2-9 | Le composant fait un appel selon le bouton utilisé | Aucun obstacle |
+| B4 |  | MUST | ⬜ À faire  | Completer le évennements du composant List-view | 1-9 | Le composant reçoit les appels de list - item et envoie l'appel de filtre| Aucun obstacle |
+| B5 |  | MUST | ⬜ À faire  | Completer le évennements du composant List | 1-9 | Le composant reçoit les appels de list-view et envoie l'appel de item | Aucun obstacle |
+| B6 |  | MUST | ⬜ À faire  | Completer le évennements du composant Item-view | 1-9 | Le composant apparait avec l'appel de Item | Aucun obstacle |
 
 
