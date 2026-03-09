@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(27, 0, 86, 0.87);
-  background-color: #eff59df1;
+  background-color: #fdf1b5;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,11 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 textarea{
-  background-color: #535bf2;
+  background-color: #05084e;
   color: antiquewhite;
 }
 input{
-  background-color: #535bf2;
+  background-color: #05084e;
   color: antiquewhite;
 
 }

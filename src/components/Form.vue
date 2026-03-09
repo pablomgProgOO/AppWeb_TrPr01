@@ -2,7 +2,7 @@
 import { ref} from "vue";
 import type { Jersey } from "../Scripts/Item";
 import 'bootstrap';
-const props = defineProps<{ selectedProduct: Jersey,selectedUsage: String,products: Jersey[] }>();
+const props = defineProps<{ selectedProduct: Jersey,selectedUsage: String | undefined,products: Jersey[] }>();
 const emit = defineEmits(["submit", "cancel", "delete","edit"]);
 const localItem = ref(props.selectedProduct);
 const usage=ref(props.selectedUsage);
@@ -47,6 +47,7 @@ if(usage.value=="Ajouter"){
 function validateAdd(){
   if (!localItem.value.Name.trim()) return "Le nom est requis.";
   if (localItem.value.Stock < 0) return "Le stock ne peut pas être négatif.";
+  if (localItem.value.price < 0) return "Le prix ne peut pas être négatif.";
   return null;
 };
 // Utilisation de confirm box pour le moment - carte de message sera faite dans le futur
@@ -71,7 +72,7 @@ function handleAdd(){
     isAdding.value=true;
     const error = validateAdd();
   if (error) {
-    alert(error);
+
     return;
   }
   else {
@@ -84,47 +85,47 @@ function handleAdd(){
 </script>
 
 <template>
-  <div class="container mt-4">
-    <div class="card shadow-sm">
-      <div class="card-header bg-success">
-        <h2 class="mb-0 ">{{ usage }}</h2>
+  <div class="Form-class">
+    <div >
+      <div >
+        <h2 >{{ usage }}</h2>
       </div>
       <div>
         <form>
-          <div class="row mb-3 align-items-center">
-            <label class="col-md-3 text-end fw-bold">Nom :</label>
-            <div class="col-md-9">
+          <div >
+            <label >Nom :</label>
+            <div >
               <input v-model="localItem.Name" class="form-control" placeholder="Entrez le nom" />
             </div>
           </div>
 
-          <div class="row mb-3 align-items-center">
-            <label class="col-md-3 text-end fw-bold">Description :</label>
-            <div class="col-md-9">
+          <div >
+            <label >Description :</label>
+            <div >
               <textarea v-model="localItem.Description" class="form-control" rows="3" placeholder="Ajoutez une description"></textarea>
             </div>
           </div>
 
-          <div class="row mb-3 align-items-center">
-            <label class="col-md-3 text-end fw-bold">Stock :</label>
-            <div class="col-md-9">
+          <div>
+            <label >Stock :</label>
+            <div >
               <input type="number" v-model="localItem.Stock" min="0" class="form-control" placeholder="Stock disponible" />
             </div>
           </div>
 
-          <div class="row mb-3 align-items-center">
-            <label class="col-md-3 text-end fw-bold">Prix :</label>
-            <div class="col-md-9">
+          <div >
+            <label >Prix :</label>
+            <div >
               <input type="number" v-model="localItem.price" min="0" class="form-control" placeholder="Stock disponible" />
             </div>
           </div>
 
-          <div class="d-flex gap-2">
-            <button type="button" @click="$emit('cancel')" class="btn btn-secondary">Annuler</button>
-            <button v-if="isAdding" @click="handleAdd" type="button" class="btn btn-primary">{{ usage }}</button>
-            <button v-else-if="isDeleting" @click="handleDelete" type="button" class="btn btn-danger">{{ usage }}</button>
-            <button v-else-if="isEditing" @click="handleEdit" type="button" class="btn btn-warning text-white">{{ usage }}</button>
-            <button v-else-if="isDuplicating" @click="handleAdd" type="button" class="btn btn-info text-white">{{ usage }}</button>
+          <div class="Submit-Buttons">
+            <button type="button" @click="$emit('cancel')" class="Cancel-button">Annuler</button>
+            <button v-if="isAdding" @click="handleAdd" type="button" class="Add-button">{{ usage }}</button>
+            <button v-else-if="isDeleting" @click="handleDelete" type="button" class="Delete-button">{{ usage }}</button>
+            <button v-else-if="isEditing" @click="handleEdit" type="button" class="Edit-button">{{ usage }}</button>
+            <button v-else-if="isDuplicating" @click="handleAdd" type="button" class="Dupe-button">{{ usage }}</button>
           </div>
         </form>
       </div>
@@ -132,4 +133,34 @@ function handleAdd(){
   </div>
 </template>
 
+<style scoped>
+.Error-message{
+  color:red;
+}
+.Form-class{
+  background-color: rgb(171, 233, 154);
+  padding: 1%;
+  color: rgb(9, 2, 65);
+  border: 4mm ridge rgb(2, 107, 6);
+}
+.Submit-Buttons{
+  margin: 1rem;
+}
+.Cancel-button{
+  background-color: chocolate;
+}
+.Add-button{
+  background-color:rgb(60, 5, 111)
+}
+.Delete-button{
+  background-color:brown
+}
+.Edit-button{
+  background-color:darkgoldenrod
+}
+.Dupe-button{
+  background-color:darkolivegreen
+}
+
+</style>
 
