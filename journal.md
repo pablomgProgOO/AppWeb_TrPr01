@@ -126,6 +126,7 @@ Finir le TP
 - Ajout de css 
 - Remplacement du alert dans Form
 - Debut et completion de l'outil de ExportCSV
+-Completion du deploy
 
 **Difficultés / bugs**  
 - …
